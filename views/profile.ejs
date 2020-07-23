@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <title>Node Authentication</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        body         { padding-top:80px; word-wrap:break-word; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+        <a href="/publish/1" class="btn btn-default btn-sm">Messages</a>
+    </div>
+
+    <div class="row">
+
+                <!-- LOGIN FORM -->
+    <form action="/publish" method="post">
+        <div class="form-group">
+            <label>Message</label>
+            <input type="text" class="form-control" name="message">
+        </div>
+        <button type="submit" class="btn btn-warning btn-lg">Publish</button>
+    </form>
+    </div>
+</div>
+</body>
+</html>
